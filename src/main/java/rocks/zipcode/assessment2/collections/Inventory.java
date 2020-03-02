@@ -18,6 +18,7 @@ public class Inventory {
      * @param strings list of strings to add / remove / fetch from
      */
     public Inventory(List<String> strings) {
+
         this.items = strings;
         inventory = new TreeMap<>();
         for(String s : strings) {
@@ -27,6 +28,7 @@ public class Inventory {
                 inventory.put(s, inventory.get(s) + 1);
             }
         }
+
     }
 
     /**
@@ -62,6 +64,7 @@ public class Inventory {
      * @return - return the number of items
      */
     public Integer getItemQuantity(String item) {
+
         if(inventory.containsKey(item)){
             return inventory.get(item);
         } else {
