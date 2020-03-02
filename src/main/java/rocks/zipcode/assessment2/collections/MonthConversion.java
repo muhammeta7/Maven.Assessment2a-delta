@@ -45,6 +45,7 @@ public class MonthConversion {
             }
         }
         return (Integer)null;
+
     }
 
 
@@ -68,11 +69,13 @@ public class MonthConversion {
      * @return number of entries in this mapping
      */
     public Integer size() {
+
         int size = 0;
         for(Map.Entry<Integer, String> e : conversionMap.entrySet()){
             size++;
         }
         return size;
+
     }
 
     /**
