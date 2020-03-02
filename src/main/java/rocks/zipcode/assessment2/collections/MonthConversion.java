@@ -35,7 +35,7 @@ public class MonthConversion {
      * @param monthName - name of month
      * @return - the ordinal of the month in the year
      */
-    public int getNumber(String monthName) {
+    public Integer getNumber(String monthName) {
 
         if (isValidMonth(monthName)) {
             for (Map.Entry<Integer, String> e : conversionMap.entrySet()) {
@@ -44,8 +44,8 @@ public class MonthConversion {
                 }
             }
         }
-        return (Integer)null;
 
+        return null;
     }
 
 
